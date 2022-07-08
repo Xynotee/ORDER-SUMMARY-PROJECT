@@ -1,0 +1,217 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+:root {
+    /* COLORS */
+
+    /*PRIMARY COLORS */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+/* NEUTRAL COLORS */
+--very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+/* FONTS */
+--ff-Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(199, 195, 195);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: var(--ff-Family);
+}
+
+.card-box {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+  overflow: hidden;
+  max-width: 27.5rem;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+/* CARD IMAGE */
+
+.card_img-holder img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius:
+}
+
+/* CARD BODY */
+
+.card-body {
+  text-align: center;
+}
+
+.title {
+  color: var(--Dark-blue);
+  font-size: 1.4rem;
+  font-weight: 900;
+  padding: 1.3em 0 .8em 0;
+}
+
+.text {
+  color: var(--Desaturated-blue);
+  line-height: 1.6;
+  font-size: .95rem;
+  padding: 0 2.1em 1.4em 2.1em;
+}
+
+/* PLAN BOX */
+
+.annual-box {
+  background: rgb(241, 239, 239);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5em 1.5em 1.5em;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.annual-box-left {
+  display: flex;
+}
+
+.annual-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.2em;
+  gap: .2em;
+  text-align: left;
+  font-size: .7rem;
+}
+
+.annual-details h2 {
+  color: var(--Dark-blue);
+  font-size: .9rem;
+}
+
+.annual-details p {
+  color: var(--Desaturated-blue);
+  font-size: .8rem;
+}
+
+.annual-box-right a {
+  color: var(--Bright-blue);
+  font-weight: 700;
+  font-size: .8rem;
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.annual-box-right a:hover {
+  opacity: .8;
+}
+
+
+/* BUTTONS */
+
+.button-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: .65em;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  all: unset;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: .95rem;
+  font-weight: 700;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 1em;
+}
+
+
+.payment-btn {
+  background: var(--Bright-blue);
+  color: white;
+  box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+  opacity: 1;
+  transition: all .2s ease;
+}
+
+.payment-btn:hover {
+  opacity: .8;
+}
+
+.cancel-btn {
+  color: var(--Desaturated-blue);
+  transition: color .2s ease;
+}
+
+.cancel-btn:hover {
+  color: var(--Dark-blue);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 375px) {
+
+  body {
+    background:  rgb(199, 195, 195);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .title {
+    font-size: 20px;
+    padding-top: 1.7em;
+    padding-bottom: .7em;
+  }
+
+  .text {
+    font-size: 16px;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .card-box {
+    margin: 0 3em 2em 3em;
+    padding: 1.5em;
+  }
+
+  .annual-box {
+      background: rgb(241, 239, 239);
+  }
+
+  .annual-details h2 {
+    font-size: 16px;
+  }
+
+  .annual-details p {
+    font-size: 16px;
+  }
+
+  .annual-box-right a {
+    font-size: 16px;
+  }
+
+  .btn {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+}
