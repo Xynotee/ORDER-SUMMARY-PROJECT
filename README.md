@@ -49,3 +49,4 @@ I didn't learn anything particularly new but I was incredibly happy to see how m
 ## Author
 
 - Frontend Mentor - [@FluffyKas](https://www.frontendmentor.io/profile/FluffyKas)
+https://xynotee.github.io/ORDER-SUMMARY-PROJECT/
